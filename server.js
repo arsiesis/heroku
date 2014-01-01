@@ -6,7 +6,7 @@ var server = deployd({
   port: process.env.PORT || 5000,
   env: 'production',
   db: {
-    host: 'process.env.MONGODB_HOST,
+    host: process.env.MONGODB_HOST,
     port: process.env.MONGODB_PORT,
     name: process.env.MONGODB_NAME,
     credentials: {
